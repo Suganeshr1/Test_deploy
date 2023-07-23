@@ -1,4 +1,4 @@
 scikit-learn==0.24.2  # Replace with the appropriate version
-statsmodels==0.13.0
+pip install statsmodels==0.12.2
 
 
