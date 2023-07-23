@@ -8,9 +8,7 @@ import numpy as np
 import pandas as pd
 # import seaborn as sns
 
-from warnings import filterwarnings
-filterwarnings("ignore")
-plt.rcParams["figure.figsize"]=[15,10]
+
 
 from sklearn.preprocessing import StandardScaler
 from sklearn.preprocessing import LabelEncoder
