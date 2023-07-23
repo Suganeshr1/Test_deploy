@@ -105,14 +105,14 @@ for i in cols:
 
 
 # sns.heatmap(df.corr(),annot=True,cmap='coolwarm', fmt=".2f")
-plt.show()
+# plt.show()
 
 
 # In[11]:
 
 
 # sns.pairplot(df,palette="bright")
-plt.show()
+# plt.show()
 
 
 # In[12]:
