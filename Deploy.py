@@ -6,7 +6,7 @@
 
 import numpy as np
 import pandas as pd
-import seaborn as sns
+# import seaborn as sns
 import matplotlib.pyplot as plt
 
 from warnings import filterwarnings
@@ -69,49 +69,49 @@ for i in cols:
 # In[8]:
 
 
-num_cols = df.select_dtypes(exclude='object')
-num = num_cols.columns
+# num_cols = df.select_dtypes(exclude='object')
+# num = num_cols.columns
 
-nrows= 2
-ncol = 3
-iterator = 1
-for i in num:
-    plt.subplot(nrows,ncol,iterator)
-    sns.distplot(df.loc[:,i],kde=True)
-    iterator +=1
-    plt.title(i)
-plt.tight_layout()
-plt.show()
+# nrows= 2
+# ncol = 3
+# iterator = 1
+# for i in num:
+#     plt.subplot(nrows,ncol,iterator)
+#     sns.distplot(df.loc[:,i],kde=True)
+#     iterator +=1
+#     plt.title(i)
+# plt.tight_layout()
+# plt.show()
 
 
 # In[9]:
 
 
-plt.rcParams["figure.figsize"]=[15,10]
-cols = ["water pressure (Mpa)",'Vol %','SOD(mm)', 'Traverse rate (mm/min)']
-nrows= 3
-ncol = 2
-iterator = 1
-for i in cols:
-    plt.subplot(nrows,ncol,iterator)
-    sns.violinplot(x=df[i],y=df['Ra(output)'])
-    iterator+=1
-    plt.title(i)
-plt.tight_layout()
-plt.show()
+# plt.rcParams["figure.figsize"]=[15,10]
+# cols = ["water pressure (Mpa)",'Vol %','SOD(mm)', 'Traverse rate (mm/min)']
+# nrows= 3
+# ncol = 2
+# iterator = 1
+# for i in cols:
+#     plt.subplot(nrows,ncol,iterator)
+#     sns.violinplot(x=df[i],y=df['Ra(output)'])
+#     iterator+=1
+#     plt.title(i)
+# plt.tight_layout()
+# plt.show()
 
 
 # In[10]:
 
 
-sns.heatmap(df.corr(),annot=True,cmap='coolwarm', fmt=".2f")
+# sns.heatmap(df.corr(),annot=True,cmap='coolwarm', fmt=".2f")
 plt.show()
 
 
 # In[11]:
 
 
-sns.pairplot(df,palette="bright")
+# sns.pairplot(df,palette="bright")
 plt.show()
 
 
@@ -456,48 +456,48 @@ df2.describe()
 num_cols = df2.select_dtypes(exclude='object')
 num = num_cols.columns
 
-nrows= 2
-ncol = 3
-iterator = 1
-for i in num:
-    plt.subplot(nrows,ncol,iterator)
-    sns.distplot(df2.loc[:,i],kde=True)
-    iterator +=1
-    plt.title(i)
-plt.tight_layout()
-plt.show()
+# nrows= 2
+# ncol = 3
+# iterator = 1
+# for i in num:
+#     plt.subplot(nrows,ncol,iterator)
+#     sns.distplot(df2.loc[:,i],kde=True)
+#     iterator +=1
+#     plt.title(i)
+# plt.tight_layout()
+# plt.show()
 
 
 # In[53]:
 
 
-plt.rcParams["figure.figsize"]=[15,15]
-cols = ['Vol %','SOD(mm)', 'Traverse rate (mm/min)']
-nrows= 4
-ncol = 1
-iterator = 1
-for i in cols:
-    plt.subplot(nrows,ncol,iterator)
-    sns.violinplot(x=df2[i],y=df2['Ra(output)'])
-    iterator+=1
-    plt.title(i)
-plt.tight_layout()
-plt.show()
+# plt.rcParams["figure.figsize"]=[15,15]
+# cols = ['Vol %','SOD(mm)', 'Traverse rate (mm/min)']
+# nrows= 4
+# ncol = 1
+# iterator = 1
+# for i in cols:
+#     plt.subplot(nrows,ncol,iterator)
+#     sns.violinplot(x=df2[i],y=df2['Ra(output)'])
+#     iterator+=1
+#     plt.title(i)
+# plt.tight_layout()
+# plt.show()
 
 
 # In[54]:
 
 
-plt.rcParams["figure.figsize"]=[8,5]
-sns.heatmap(df2.corr(),annot=True,cmap='coolwarm', fmt=".2f")
-plt.show()
+# plt.rcParams["figure.figsize"]=[8,5]
+# sns.heatmap(df2.corr(),annot=True,cmap='coolwarm', fmt=".2f")
+# plt.show()
 
 
 # In[55]:
 
 
-sns.pairplot(df2,palette="bright")
-plt.show()
+# sns.pairplot(df2,palette="bright")
+# plt.show()
 
 
 # In[56]:
